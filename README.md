@@ -35,7 +35,24 @@ To mitigate Large Multimodal Model (LMM) hallucination variance on obscure histo
 * Authenticates to Google Workspace via OAuth2.
 * Appends a structured 6-column relational row mapping narrative data and original image filenames to the corresponding Google Sheets tab.
 * Moves local staging folders into the permanent archive directory.
+---
 
+## 📸 System in Action
+
+### 1. Physical Ingestion & Staging
+Custom photo booth setup utilizing standardized Manila identification tags and WEAM circular separator cards to establish boundaries for out-of-order camera rolls.
+
+![Physical Setup & Separator Card](assets/setup_photo_booth.png)
+
+### 2. Multimodal Consensus & Self-Correction Engine
+Real-time terminal execution demonstrating the 3-pass consensus voting loop resolving categorization variance (`Pass 1: Gear` vs `Pass 2/3: Aircraft Parts`) followed by an automated self-correction schema pass.
+
+![Consensus Voting Terminal Output](assets/consensus_terminal.png)
+
+### 3. Automated Relational Cloud Export
+Structured 6-column catalog entry automatically routed and committed to the matching Google Sheets category tab, appending normalized avionics descriptions, operational context, and asset image filenames.
+
+![Google Sheets Archival Database](assets/sheets_database_export.png)
 ---
 
 ## 📂 Data Schema & Directory Structure
